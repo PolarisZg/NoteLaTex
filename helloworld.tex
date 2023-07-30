@@ -1,0 +1,55 @@
+\documentclass{article} % 文档类型为文章
+
+\usepackage{graphicx} % 用于插入图片
+\usepackage{amsmath}  % 数学公式支持
+
+\title{LaTeX 示例} % 文档标题
+\author{您的姓名}   % 作者
+\date{\today}       % 日期
+
+\begin{document}
+	
+	\maketitle % 创建标题
+	
+	\section{介绍} % 创建第一节
+	这是一个简单的 LaTeX 示例文档，用于演示基本的 LaTeX 文档结构和一些常用功能。
+	
+	\section{数学公式} % 创建第二节
+	LaTeX 是数学排版的强大工具，它能够轻松地创建漂亮的数学公式。
+	
+	\subsection{行内公式}
+	使用美元符号可以创建行内公式，例如：$E=mc^2$ 表示能量和质量之间的关系。
+	
+	\subsection{居中公式}
+	使用 \texttt{equation} 环境可以创建居中的公式，例如：
+	\begin{equation}
+		\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+	\end{equation}
+	
+	\section{列表} % 创建第三节
+	使用 \texttt{itemize} 环境可以创建项目符号列表：
+	\begin{itemize}
+		\item 苹果
+		\item 香蕉
+		\item 橙子
+	\end{itemize}
+	
+	使用 \texttt{enumerate} 环境可以创建编号列表：
+	\begin{enumerate}
+		\item 第一步
+		\item 第二步
+		\item 第三步
+	\end{enumerate}
+	
+	\section{插入图片} % 创建第四节
+	使用 \texttt{figure} 环境可以插入并引用图片：
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image} % 图片文件名为 example-image.png
+		\caption{这是一个示例图片。}
+		\label{fig:example}
+	\end{figure}
+	
+	在图像 \ref{fig:example} 中，我们展示了一个示例图片。
+	
+\end{document}
